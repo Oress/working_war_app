@@ -17,7 +17,7 @@
 <body style="font-family: 'Montserrat', sans-serif; width: 100vw; height: 100vh">
     <main role="main" style="position: absolute; left: 50%; transform: translateX(-50%);">
         <div style="padding: 3rem 1.5rem; text-align: center;">
-            <h1>Good job!!! You've just deployed an app using TeamCity!</h1>
+            <h1>GREAT job!!! You've just deployed an app using TeamCity!</h1>
             <img src="resources/clapclap.gif"></img>
         </div>
     </main>
