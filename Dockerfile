@@ -1,2 +1,3 @@
 FROM tomcat:9.0.62-jre8-openjdk
-COPY ./target/war-app-1.0.war $CATALINA_HOME/webapps/sample.war
+COPY ./target/*.war $CATALINA_HOME/webapps/app.war
+# login to the http://<tomcat-url>:port/app/...

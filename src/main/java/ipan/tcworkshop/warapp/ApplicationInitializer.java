@@ -1,7 +1,7 @@
 package ipan.tcworkshop.warapp;
 
 
-import org.ipan.tzar.springDocs.config.SpringConfig;
+import ipan.tcworkshop.warapp.config.SpringConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -15,8 +15,9 @@ public class ApplicationInitializer implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
         context.register(SpringConfig.class);
 
+        System.out.println("!!!!!!!!!!!!!!!!!!!!Initialiing");
         DispatcherServlet servlet = new DispatcherServlet(context);
-        ServletRegistration.Dynamic registration = servletContext.addServlet("app", servlet);
+        ServletRegistration.Dynamic registration = servletContext.addServlet("myDispatcherServlet", servlet);
         registration.setLoadOnStartup(1);
 
         // Fucking trailing asterisk shits all over the project. '/*' - bitch.

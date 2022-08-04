@@ -1,5 +1,6 @@
-package org.ipan.tzar.springDocs.config;
+package ipan.tcworkshop.warapp.config;
 
+import ipan.tcworkshop.warapp.MainController;
 import org.springframework.context.annotation.*;
 
 @Configuration
@@ -7,5 +8,8 @@ import org.springframework.context.annotation.*;
         WebConfig.class,
 })
 public class SpringConfig {
-
+    @Bean
+    public MainController mainController() {
+        return new MainController();
+    }
 }
